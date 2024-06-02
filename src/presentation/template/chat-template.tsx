@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { GptMessage, MyMessage, TextMessageBox, TextMessageBoxFile, TyPingLoader } from "../../components"
+import { GptMessage, MyMessage, TextMessageBox, TyPingLoader } from "../components"
 
 
 interface Message {
@@ -8,7 +8,7 @@ interface Message {
 }
 
 
-export const OrthographyPage = () => {
+export const ChatTemplate = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
 
@@ -54,15 +54,9 @@ export const OrthographyPage = () => {
         </div>
       </div>
 
-      {/* <TextMessageBox
+      <TextMessageBox
         onSendMessage={ handlePost }
-        placeholder={"Escibe lo que deseas traducir"}
-        disabledCorrection
-      /> */}
-
-      <TextMessageBoxFile
-        onSendMessage={ handlePost }
-        placeholder={"Manda el archivo a evaluar"}
+        placeholder={"Escibe un mensaje..."}
       />
 
     </div>
