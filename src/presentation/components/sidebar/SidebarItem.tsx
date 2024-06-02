@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom"
-import { SidebarItemInferface } from '../../../interfaces/SidebarItem.interface';
+import { SidebarItemInferface } from '../../../interfaces';
 
 
 
